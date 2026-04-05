@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making and Baking</title>
+
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: linear-gradient(to right, #ffe4e1, #fff0f5);
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #ffb6c1;
+            padding: 20px;
+            color: white;
+            font-size: 2em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff1493;
+            transform: scale(1.05);
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px;
+            color: #ff1493;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .cupcake {
+            font-size: 40px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        🍰 Making and Baking 🍰
+    </header>
+
+    <div class="cupcake">🧁🧁🧁</div>
+
+    <div class="container">
+
+        <p>Join our fun baking classes and become a baking star! ✨</p>
+
+        <a href="https://www.bbcgoodfood.com" target="_blank">
+            Get Baking Ideas 🍪
+        </a>
+
+        <h2>📋 Book Your Class</h2>
+
+        <form action="https://formspree.io/f/xeepvopl" method="POST">
+
+            <!-- Hidden settings -->
+            <input type="hidden" name="_subject" value="New Baking Class Booking! 🍰">
+            <input type="hidden" name="_next" value="thankyou.html">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <!-- Contact email -->
+            <input type="email" name="email" placeholder="Your Email (for reply)" required>
+
+            <!-- Student info -->
+            <input type="text" name="student_name" placeholder="Student Name" required>
+            <input type="number" name="age" placeholder="Age" required>
+            <textarea name="allergies" placeholder="Allergies"></textarea>
+            <input type="number" name="number_of_students" placeholder="Number of Students" required>
+
+            <!-- Father details -->
+            <input type="text" name="father_name" placeholder="Father's Name">
+            <input type="text" name="father_contact" placeholder="Father's Contact">
+            <input type="email" name="father_email" placeholder="Father's Email">
+
+            <!-- Mother details -->
+            <input type="text" name="mother_name" placeholder="Mother's Name">
+            <input type="text" name="mother_contact" placeholder="Mother's Contact">
+            <input type="email" name="mother_email" placeholder="Mother's Email">
+
+            <!-- Booking -->
+            <input type="date" name="booking_date" required>
+
+            <br><br>
+
+            <button type="submit">Submit 🎂</button>
+
+        </form>
+
+    </div>
+
+    <footer style="margin-top:20px; padding:10px; color:#777;">
+        © 2026 Making and Baking
+    </footer>
+
+</body>
+
+</html>
