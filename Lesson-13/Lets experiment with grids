@@ -1,0 +1,34 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Bootstrap Grid System</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+                content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </script>
+    </head>
+<body>
+    <div class="container">
+        <h1>Hello Students</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="row">
+            <!--Size Medium and extra small-->
+          <div class="col-md-8 col-xs-4" style="background-color:red; border: 1px solid black;">xs </div>
+            <div class="col-md-12 col-xs-5" style="background-color:lavender;">.col-xs-3 </div>
+        </div>
+                <div class="row">
+                    <!--Size Medium and extra small-->
+                    <div class="col-md-12 col-xs-6" style="background-color:lavenderblush; ">.col-xs-6 </div>
+                    <div class="col-md-6 col-xs-2" style="background-color:lightgrey;">.col-xs-6 
+                <div class="row" style="background-color: lightcyan;">
+                    <!--SIze extra small-->
+                    <div class="col-xs-6">.col-xs-6</div>
+                    <div class="col-xs-6">.col-xs-6</div>
+                    </div>
+                    </div>
+</body>
+</html>
+
+
