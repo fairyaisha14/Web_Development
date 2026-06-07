@@ -1,0 +1,18 @@
+<!--In this activity, learn about the loops and how loops are useful in JS.-->
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Javascript For Loop</h2>
+<p id="demo"></p>
+<script>
+    var fruits = ["Apple", "Mango", "Grapes",
+        "Watermelon", "Jack fruit", "Banana"];
+    var text = "";
+    var i;
+    for (i = 0; i < fruits.length; i++) {
+        text += fruits[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
