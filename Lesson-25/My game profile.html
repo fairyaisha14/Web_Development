@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Game Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: aliceblue;
+            text-align: center;
+            padding: 30px;
+        }
+        h1 { color: navy; }
+        button {
+            background-color: navy;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        div {
+            border: 1px solid navy;
+            width: 280px;
+            margin: 6px auto;
+            padding: 8px 12px;
+            text-align: left;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Game Profiles</h1>
+    <button onclick="showProfile()">Show Profile</button>
+
+    <div>Name: <span id="name"></span></div>
+    <div>Score: <span id="score"></span></div>
+    <div>Top Score: <span id="record"></span></div>
+    <div>Rank: <span id="rank"></span></div>
+    <div>Greeting: <span id="greeting"></span></div>
+    <div>Stars: <span id="stars"></span></div>
+    <div>Bonus Level: <span id="bonus"></span></div>
+    <div>Team Name: <span id="team"></span></div>
+
+    <script>
+
+        function showProfile() {
+
+            //Variables
+            let name      ="Alex";
+            let myScore   = 75;
+            let highScore = 100;
+            let bonus     = null;
+            let team;
+
+            //Comparison Operator
+            let isTopSCore = myScore == highscore;
+
+            // if / else - Rank
+            let rank;
+            if (myScore >= 80) {
+                rank ="Gold";
+            } else if (myScore >= 50) {
+                rank = "Silver";
+            } else {
+                rank = "Bronze";
+            }
+
+            // Date Object - Greeting
+            let hour = new Date().getHours();
+            let greeting;
+            if (hour < 12) {
+                greeting = "Good Morning!";
+            } else if (hour < 17) {
+                greeting = "Good Evening!";
+            } else {
+                greeting ="Good Evening!";
+            }
+
+            // WHit
+        }
+    </script>
+</body>
